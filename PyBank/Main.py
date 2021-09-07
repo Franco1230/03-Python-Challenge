@@ -21,7 +21,7 @@ with open(pybank) as csv_file:
     # Skip header
     pybank_header = next(csv_reader)
 
-    # Calculate the total of "Profit/Losses"    
+    # Calculate the total of "Profit/Losses"
     profit = 0
     for row in csv_reader:
         profit += float(row[1])
