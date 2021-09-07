@@ -41,7 +41,7 @@ with open(pybank) as csv_file:
     for row in csv_reader:
         change = float(row[1]) - previousprofit
         changelist.append(change)
-        previousprofit=float(row[1])
+        previousprofit = float(row[1])
     changelist.remove(changelist[0])
     averageprofit = sum(changelist) / (len(changelist))
 
