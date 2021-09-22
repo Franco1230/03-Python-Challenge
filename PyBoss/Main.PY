@@ -115,7 +115,7 @@ Rows = [employeeid, firstname, lastname, DOB, hiddenssn, stateabbrev]
 # Converting lists into columns into a CSV file
 exportdata = zip_longest(*Rows, fillvalue = '')
 
-with open(converteddata,"w", newline = '', encoding='utf-8') as file:
+with open(converteddata,"w", newline = '', encoding = "utf-8") as file:
 
     # Initialize csv.writer
     csvwriter = csv.writer(file)
