@@ -3,8 +3,8 @@ import os, csv
 from itertools import zip_longest
 
 # Set input file path 
-employeedata = os.path.join("Python-challenge", "PyBoss", "employee_data.csv")
-employeedata = r'C:\Users\franc\OneDrive\Desktop\Data Bootcamp assignments\Homework - Assignment\Python-Challenge\PyBoss\employee_data.csv'
+# employeedata = os.path.join("03-Python-challenge", "PyBoss", "employee_data.csv")
+employeedata = r'C:\Users\franc\OneDrive\Desktop\Data Bootcamp assignments\Homework - Assignment\03-Python-Challenge\PyBoss\employee_data.csv'
 
 # Set empty lists)
 employeeid = []
@@ -106,8 +106,8 @@ with open(employeedata) as csvfile:
         stateabbrev.append(usstateabbrev[row[4]])
 
 # Set output file path
-converteddata = os.path.join("Python-Challenge", "PyBoss", "converted_data.csv")
-converteddata = r'C:\Users\franc\OneDrive\Desktop\Data Bootcamp assignments\Homework - Assignment\Python-Challenge\PyBoss\converted_data.csv'
+# converteddata = os.path.join("03-Python-Challenge", "PyBoss", "converted_data.csv")
+converteddata = r'C:\Users\franc\OneDrive\Desktop\Data Bootcamp assignments\Homework - Assignment\03-Python-Challenge\PyBoss\converted_data.csv'
 
 # Initiat each column to be in order
 Rows = [employeeid, firstname, lastname, DOB, hiddenssn, stateabbrev]
