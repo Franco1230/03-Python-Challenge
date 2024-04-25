@@ -1,0 +1,6 @@
+Paragraph Analysis for C:\Users\franc\OneDrive\Desktop\Data Bootcamp assignments\Homework - Assignment\03-Python-Challenge\PyParagraph\raw_data\test_paragraph.txt:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Approximate Word Count: 418
+Approximate Sentence Count: 16
+Average Letter Count (per word): 3.74
+Average Sentence Length (in words): 26.12

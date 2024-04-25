@@ -2,8 +2,8 @@
 import os, csv
 
 # Set file path (change between "paragraph_1" or "paragraph_2")
-inputfile = os.path.join("Python-Challenge", "PyParagraph", "raw_data", "test_paragraph.txt")
-inputfile = r'C:\Users\franc\OneDrive\Desktop\Data Bootcamp assignments\Homework - Assignment\Python-Challenge\PyParagraph\raw_data\test_paragraph.txt'
+# inputfile = os.path.join("03-Python-Challenge", "PyParagraph", "raw_data", "test_paragraph.txt")
+inputfile = r'C:\Users\franc\OneDrive\Desktop\Data Bootcamp assignments\Homework - Assignment\03-Python-Challenge\PyParagraph\raw_data\test_paragraph.txt'
 
 # Open file and read txt 
 with open(inputfile) as text:
@@ -29,10 +29,9 @@ print(f"Approximate Sentence Count: {sentences}")
 print(f"Average Letter Count (per word): {letterperword}")
 print(f"Average Sentence Length (in words): {wordspersentence}")
 
-
 # Set Output files
-outputfile = os.path.join("Python-Challenge", "PyParagraph", "tp_analysis.txt")
-outputfile = r'C:\Users\franc\OneDrive\Desktop\Data Bootcamp assignments\Homework - Assignment\Python-Challenge\PyParagraph\tp_analysis.txt'
+# outputfile = os.path.join("03-Python-Challenge", "PyParagraph", "tp_analysis.txt")
+outputfile = r'C:\Users\franc\OneDrive\Desktop\Data Bootcamp assignments\Homework - Assignment\03-Python-Challenge\PyParagraph\tp_analysis.txt'
 
 with open(outputfile,"w") as file:
     
