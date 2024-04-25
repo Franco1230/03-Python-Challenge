@@ -16,10 +16,10 @@ words = len([word for word in paragraph.split(sep = " ")])
 sentences = len([word for word in paragraph if word is "."]) + len([word for word in paragraph if word is "?"]) +  len([word for word in paragraph if word is "!"])
 
 # Use isalpha function to calculate the average letters in words 
-letterperword = round(len([c for c in paragraph if c.isalpha()])/words,2)
+letterperword = round(len([c for c in paragraph if c.isalpha()])/words, 2)
 
 # Calculate the average words in sentences 
-wordspersentence = round(words/sentences,2)
+wordspersentence = round(words/sentences, 2)
 
 # Print result
 print(f"Paragraph Analysis")
