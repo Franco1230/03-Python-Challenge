@@ -1,4 +1,4 @@
-Paragraph Analysis for C:\Users\franc\OneDrive\Desktop\Data Bootcamp assignments\Homework - Assignment\03-Python-Challenge\PyParagraph\raw_data\test_paragraph.txt:
+Paragraph Analysis for test_paragraph.txt:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Approximate Word Count: 418
 Approximate Sentence Count: 16

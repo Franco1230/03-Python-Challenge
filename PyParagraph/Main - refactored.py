@@ -2,11 +2,17 @@
 import os
 
 # Define the input file paths (absolute paths)
+# inputfile = os.path.join("03-Python-Challenge", "PyParagraph", "raw_data", "paragraph_1.txt")
+# inputfile = os.path.join("03-Python-Challenge", "PyParagraph", "raw_data", "paragraph_2.txt")
+# inputfile = os.path.join("03-Python-Challenge", "PyParagraph", "raw_data", "test_paragraph.txt")
 inputfilep1 = r'C:\Users\franc\OneDrive\Desktop\Data Bootcamp assignments\Homework - Assignment\03-Python-Challenge\PyParagraph\raw_data\paragraph_1.txt'
 inputfilep2 = r'C:\Users\franc\OneDrive\Desktop\Data Bootcamp assignments\Homework - Assignment\03-Python-Challenge\PyParagraph\raw_data\paragraph_2.txt'
 inputfiletp = r'C:\Users\franc\OneDrive\Desktop\Data Bootcamp assignments\Homework - Assignment\03-Python-Challenge\PyParagraph\raw_data\test_paragraph.txt'
 
 # Define the output file paths (absolute paths, in the same directory as the input files)
+# outputfile = os.path.join("03-Python-Challenge", "PyParagraph", "p1_analysis.txt")
+# outputfile = os.path.join("03-Python-Challenge", "PyParagraph", "p2_analysis.txt")
+# outputfile = os.path.join("03-Python-Challenge", "PyParagraph", "tp_analysis.txt")
 outputfilep1 = r'C:\Users\franc\OneDrive\Desktop\Data Bootcamp assignments\Homework - Assignment\03-Python-Challenge\PyParagraph\p1_analysis - refactored.txt'
 outputfilep2 = r'C:\Users\franc\OneDrive\Desktop\Data Bootcamp assignments\Homework - Assignment\03-Python-Challenge\PyParagraph\p2_analysis - refactored.txt'
 outputfiletp = r'C:\Users\franc\OneDrive\Desktop\Data Bootcamp assignments\Homework - Assignment\03-Python-Challenge\PyParagraph\tp_analysis - refactored.txt'
@@ -34,8 +40,11 @@ for inputfile, outputfile_path in zip(paragraphs, outputfile_paths):
     letterperword = round(sum(len(word) for word in paragraph.split() if word.isalpha()) / words, 2)
     wordspersentence = round(words / sentences, 2)
 
+    # Get the filename (excluding the directory)
+    filenames = os.path.basename(inputfile)
+
     # Print the analysis results
-    print(f"Paragraph Analysis for {inputfile}:")
+    print(f"Paragraph Analysis for {filenames}:")
     print(f"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
     print(f"Approximate Word Count: {words}")
     print(f"Approximate Sentence Count: {sentences}")
@@ -45,7 +54,7 @@ for inputfile, outputfile_path in zip(paragraphs, outputfile_paths):
 
     # Write the analysis results to the output file
     with open(outputfile_path, "w") as file:
-        file.write(f"Paragraph Analysis for {inputfile}:\n")
+        file.write(f"Paragraph Analysis for {filenames}:\n")
         file.write(f"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
         file.write(f"Approximate Word Count: {words}\n")
         file.write(f"Approximate Sentence Count: {sentences}\n")
