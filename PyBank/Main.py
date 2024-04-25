@@ -1,9 +1,9 @@
 # Import Dependencies
-import os,csv
+import os, csv
 
 # Set file path
-pybank = os.path.join("PyBank", "Resources", "budget_data.csv")
-pybank = r'C:\Users\franc\OneDrive\Desktop\Data Bootcamp assignments\Homework - Assignment\Python-Challenge\PyBank\Resources\budget_data.csv'
+# pybank = os.path.join("03-Python-Challenge", "PyBank", "Resources", "budget_data.csv")
+pybank = r'C:\Users\franc\OneDrive\Desktop\Data Bootcamp assignments\Homework - Assignment\03-Python-Challenge\PyBank\Resources\budget_data.csv'
 
 # Open and read CSV
 with open(pybank) as csv_file:
@@ -72,7 +72,7 @@ with open(pybank) as csv_file:
 # Set output file path
 output_file = os.path.join("Python-Challenge", "PyBank", "Summary.txt")
 
-output_file = r'C:\Users\franc\OneDrive\Desktop\Data Bootcamp assignments\Homework - Assignment\Python-Challenge\PyBank\Summary.txt'
+output_file = r'C:\Users\franc\OneDrive\Desktop\Data Bootcamp assignments\Homework - Assignment\03-Python-Challenge\PyBank\Summary.txt'
 
 with open(output_file,"w") as file:
     
