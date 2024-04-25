@@ -2,8 +2,8 @@
 import os, csv
 
 # Declare file path
-pypoll = os.path.join("..", "PyPoll", "Resources", "budget_data.csv")
-pypoll = r'C:\Users\franc\OneDrive\Desktop\Data Bootcamp assignments\Homework - Assignment\Python-Challenge\PyPoll\Resources\election_data.csv'
+# pypoll = os.path.join("..", "PyPoll", "Resources", "budget_data.csv")
+pypoll = r'C:\Users\franc\OneDrive\Desktop\Data Bootcamp assignments\Homework - Assignment\03-Python-Challenge\PyPoll\Resources\election_data.csv'
 
 # Set variables 
 totalvotes = 0
@@ -65,8 +65,8 @@ print(f"Winner: {key}")
 print(f"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
 # Set output file
-summaryfile = os.path.join("..", "Python-Challenge", "PyPoll", "Summary.txt")
-summaryfile = r"C:\Users\franc\OneDrive\Desktop\Data Bootcamp assignments\Homework - Assignment\Python-Challenge\PyPoll\Summary.txt"
+# summaryfile = os.path.join("..", "03-Python-Challenge", "PyPoll", "Summary.txt")
+summaryfile = r"C:\Users\franc\OneDrive\Desktop\Data Bootcamp assignments\Homework - Assignment\03-Python-Challenge\PyPoll\Summary.txt"
 
 with open(summaryfile,"w") as file:
 
